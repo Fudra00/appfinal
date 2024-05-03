@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/Javascript" src="js/codigo.js"></script>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" >
+            <img src="img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Sistema de calificaciones
+        </a>
+    </div>
+    </div>
+</nav>
+
+<body>
+    <form action="#sistemaNotas" class="row g-3 needs-validation">
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Nombre del Aprendiz</label>
+            <input type="text" class="form-control" id="nombre">
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Apellido del Aprendiz</label>
+            <input type="text" class="form-control" id="apellido">
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Ficha del Aprendiz</label>
+            <div class="input-group has-validation">
+                <input type="text" class="form-control" id="ficha" aria-describedby="inputGroupPrepend">
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Seleccione Trimestre</label>
+            <select class="form-select" aria-label="Default select example" id="trimestre">
+                <option selected>Trimestre-></option>
+                <option value="1 trimestre">1 Trimestre</option>
+                <option value="2 trimestre">2 Trimestre</option>
+                <option value="3 trimestre">3 Trimestre</option>
+                <option value="4 trimestre">4 Trimestre</option>
+                <option value="5 trimestre">5 Trimestre</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Seleccione primera competencia a evaluar</label>
+            <select class="form-select" aria-label="Default select example" id="primeraCompetencia">
+                <option selected>Competencias-></option>
+                <option value="Fisica">Fisica</option>
+                <option value="Php">Php</option>
+            </select>
+        </div>
+        <div class="col-md-1">
+            <label for="inputZip" class="form-label">Nota 1</label>
+            <input type="text" class="form-control" id="nota1Competencia1">
+        </div>
+        <div class="col-md-1">
+            <label for="inputZip" class="form-label">Nota 2</label>
+            <input type="text" class="form-control" id="nota2Competencia1">
+        </div>
+        <div class="col-md-1">
+            <label for="inputZip" class="form-label">Nota 3</label>
+            <input type="text" class="form-control" id="nota3Competencia1">
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Seleccione primera competencia a evaluar</label>
+            <select class="form-select" aria-label="Default select example" id="segundacompetencia">
+                <option selected>Competencias-></option>
+                <option value="Fisica">Javascript</option>
+                <option value="Php">Requisitos</option>
+            </select>
+        </div>
+        <div class="col-md-1">
+            Nota 1
+            <input type="text" class="form-control" id="segundaCompetencian1">
+        </div>
+        <div class="col-md-1">
+            Nota 2
+            <input type="text" class="form-control" id="segundaCompetencian2">
+        </div>
+        <div class="col-md-1">
+            Nota 3
+            <input type="text" class="form-control" id="segundaCompetencian3">
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit" onclick="calcular()">Evaluar</button>
+        </div>
+    </form>
+</body>
+
+</html>
